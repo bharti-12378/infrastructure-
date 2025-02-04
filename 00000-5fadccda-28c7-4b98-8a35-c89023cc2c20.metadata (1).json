@@ -1,0 +1,74 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "80931c2c-d775-4c81-b159-d20bd173f3c2",
+  "location" : "s3://warehouse/people_names_8e6f8b68-10cc-4f5f-8fc3-2ce45abc3233",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1736413776237,
+  "last-column-id" : 2,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "compatibility.snapshot-id-inheritance.enabled" : "true",
+    "write.metadata.delete-after-commit.enabled" : "false",
+    "commit.manifest.target-size-bytes" : "153600",
+    "gc.enabled" : "false",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 3641887830523144144,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 3641887830523144144,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 3641887830523144144,
+    "timestamp-ms" : 1736413776237,
+    "summary" : {
+      "operation" : "append",
+      "changed-partition-count" : "0",
+      "total-records" : "0",
+      "total-files-size" : "0",
+      "total-data-files" : "0",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "iceberg-version" : "Apache Iceberg 1.6.0-229d8f6-20240725064828-ee9f85d (commit ee9f85dee581c173bf88b61ef2912f7401c277b7)"
+    },
+    "manifest-list" : "s3://warehouse/people_names_8e6f8b68-10cc-4f5f-8fc3-2ce45abc3233/metadata/snap-3641887830523144144-1-cfb762ee-18a1-4aec-92cc-53e8e5160444.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1736413776237,
+    "snapshot-id" : 3641887830523144144
+  } ],
+  "metadata-log" : [ ]
+}
